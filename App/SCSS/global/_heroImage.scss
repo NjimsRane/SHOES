@@ -1,0 +1,15 @@
+/*======== hero image is the main background and for the mobile , it will take the full screen and will be send back using z-index*/
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/Images/revolt-164_6wVEHfI-unsplash.jpg);
+
+  background-position: 20% 20%;
+  background-size: cover;
+}

@@ -1,0 +1,21 @@
+.mainSection {
+  div {
+    margin-block: 2em;
+  }
+  font-family: var(--FONT-FAMILY);
+  h3 {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    margin-block: 1em 2em;
+    line-height: 1.5;
+  }
+  img {
+    width: 100%;
+    height: 25em;
+    object-fit: cover;
+  }
+}

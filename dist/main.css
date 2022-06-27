@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --TRANSITION: 0.5s;
+  --FONT-FAMILY: sans-serif, verdana, helvetica;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+body .container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2em;
+}
+
+/*======== hero image is the main background and for the mobile , it will take the full screen and will be send back using z-index*/
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Images/revolt-164_6wVEHfI-unsplash.jpg);
+  background-position: 20% 20%;
+  background-size: cover;
+}
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainHeader #logo {
+  font-family: var(--FONT-FAMILY);
+  font-size: x-large;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: rgb(12, 6, 32);
+}
+.mainHeader #logo span {
+  color: #fff;
+}
+.mainHeader .navMenu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: var(--TRANSITION);
+}
+.mainHeader .navMenu .menuList {
+  margin-top: 8em;
+}
+.mainHeader .navMenu .menuList li {
+  text-transform: uppercase;
+  font-family: var(--FONT-FAMILY);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.mainHeader .navMenu .menuList li a {
+  display: block;
+  padding: 2em 3em;
+  color: #282828;
+}
+.mainHeader .navMenuChange {
+  transform: translateX(0);
+}
+.mainHeader .hamburgerMenu {
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+}
+.mainHeader .hamburgerMenu .hamburger {
+  width: 3em;
+  height: 0.4em;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: var(--TRANSITION);
+}
+.mainHeader .hamburgerMenu .hamburger:not(:last-child) {
+  margin-bottom: 0.4em;
+}
+.mainHeader .hamburgerMenu .hamburger:nth-child(odd) {
+  width: 2em;
+  transform: translate(50%);
+}
+.mainHeader .hamburgerMenu .hamburgerChange {
+  background-color: #282828;
+}
+.mainHeader .hamburgerMenuChange .hamburger:nth-child(2) {
+  width: 0;
+}
+.mainHeader .hamburgerMenuChange .hamburger:nth-child(1) {
+  transform: translate(0, 8px) rotate(45deg);
+}
+.mainHeader .hamburgerMenuChange .hamburger:nth-child(3) {
+  transform: translate(0, -8px) rotate(-45deg);
+}
+
+.headingSection {
+  color: #fff;
+  font-family: var(--FONT-FAMILY);
+}
+.headingSection h2 {
+  font-size: 5rem;
+  margin-block: 2em 0.5em;
+  line-height: 1.2;
+}
+.headingSection p {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+.headingSection .animatedBar {
+  position: absolute;
+  width: 0.4em;
+  height: 10em;
+  background-color: #fff;
+  bottom: 10%;
+  animation-name: bar;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes bar {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.mainSection {
+  font-family: var(--FONT-FAMILY);
+}
+.mainSection div {
+  margin-block: 2em;
+}
+.mainSection h3 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.mainSection p {
+  font-size: 1.4rem;
+  margin-block: 1em 2em;
+  line-height: 1.5;
+}
+.mainSection img {
+  width: 100%;
+  height: 25em;
+  object-fit: cover;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,38 @@
+.headingSection {
+  color: #fff;
+
+  font-family: var(--FONT-FAMILY);
+
+  h2 {
+    font-size: 5rem;
+
+    margin-block: 2em 0.5em;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+
+  .animatedBar {
+    position: absolute;
+    width: 0.4em;
+    height: 10em;
+    background-color: #fff;
+
+    bottom: 10%;
+
+    animation-name: bar;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+}
+@keyframes bar {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
