@@ -1,21 +1,29 @@
 .mainSection {
-  div {
-    margin-block: 2em;
+  .sneakers {
+    margin-block: 5em;
   }
+
   font-family: var(--FONT-FAMILY);
   h3 {
     font-weight: 700;
     font-size: 2rem;
+    text-align: right;
   }
 
   p {
     font-size: 1.4rem;
     margin-block: 1em 2em;
     line-height: 1.5;
+
+    text-align: justify;
   }
   img {
     width: 100%;
+
     height: 25em;
     object-fit: cover;
+    border-radius: 8px;
+
+    box-shadow: 2px 2px 4px #444;
   }
 }

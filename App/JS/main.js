@@ -1,6 +1,7 @@
 const hamburgerMenu = document.querySelector(".hamburgerMenu");
 const hamburger = document.querySelectorAll(".hamburger");
 const navMenu = document.querySelector(".navMenu");
+const wrapper = document.querySelector(".wrapper");
 
 
 /* ============ =============== */
@@ -17,4 +18,5 @@ function changBurgerShape(){
     burger.classList.toggle("hamburgerChange")
   })
   navMenu.classList.toggle("navMenuChange");
+  wrapper.classList.toggle("wrapperChange")
 }

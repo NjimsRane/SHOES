@@ -30,11 +30,18 @@ body {
   min-height: 100vh;
   width: 100%;
 }
-body .container {
+body .container,
+body .wrapper {
   position: relative;
   min-height: 100vh;
   width: 100%;
   padding: 2em;
+}
+body .wrapper {
+  filter: blur(0px);
+}
+body .wrapperChange {
+  filter: blur(5px);
 }
 
 /*======== hero image is the main background and for the mobile , it will take the full screen and will be send back using z-index*/
@@ -70,9 +77,10 @@ body .container {
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 999;
   width: 50%;
-  height: 100%;
-  background-color: #fff;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
   transform: translateX(100%);
   transition: var(--TRANSITION);
 }
@@ -97,6 +105,7 @@ body .container {
 .mainHeader .hamburgerMenu {
   cursor: pointer;
   position: absolute;
+  z-index: 999;
   right: 5%;
 }
 .mainHeader .hamburgerMenu .hamburger {
@@ -115,6 +124,9 @@ body .container {
 }
 .mainHeader .hamburgerMenu .hamburgerChange {
   background-color: #282828;
+}
+.mainHeader .hamburgerMenuChange {
+  position: fixed;
 }
 .mainHeader .hamburgerMenuChange .hamburger:nth-child(2) {
   width: 0;
@@ -162,20 +174,24 @@ body .container {
 .mainSection {
   font-family: var(--FONT-FAMILY);
 }
-.mainSection div {
-  margin-block: 2em;
+.mainSection .sneakers {
+  margin-block: 5em;
 }
 .mainSection h3 {
   font-weight: 700;
   font-size: 2rem;
+  text-align: right;
 }
 .mainSection p {
   font-size: 1.4rem;
   margin-block: 1em 2em;
   line-height: 1.5;
+  text-align: justify;
 }
 .mainSection img {
   width: 100%;
   height: 25em;
   object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px #444;
 }/*# sourceMappingURL=main.css.map */
