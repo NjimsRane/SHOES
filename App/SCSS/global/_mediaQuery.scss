@@ -1,0 +1,98 @@
+@media (min-width: 950px) {
+  body {
+    .container {
+      padding: 2em 8em;
+    }
+  }
+  .heroImage {
+    left: auto;
+    top: auto;
+    width: 50%;
+    left: 50%;
+    height: 40em;
+  }
+  .container {
+    .mainHeader {
+      height: 6em;
+
+      #logo {
+        span {
+          color: red;
+        }
+      }
+      .hamburgerMenu {
+        display: none;
+      }
+      .navMenu {
+        position: unset;
+        transform: translateX(0);
+        width: auto;
+        height: auto;
+        background: none;
+        left: 0;
+        top: 0;
+
+        .menuList {
+          margin-top: 0em;
+          display: flex;
+          li {
+            margin-left: 3em;
+            position: relative;
+            &::after {
+              position: absolute;
+              content: "";
+              width: 0;
+              height: 0.2em;
+              background-color: white;
+              left: 0;
+              top: 1.5em;
+
+              transition: 0.5s;
+            }
+            &:hover::after {
+              width: 100%;
+            }
+            a {
+              padding: 0 0;
+              color: white;
+              display: auto;
+            }
+          }
+        }
+      }
+    }
+    .headingSection {
+      margin-bottom: 6em;
+      color: #282828;
+      width: 40%;
+
+      .animatedBar {
+        background-color: #282828;
+      }
+    }
+  }
+  body {
+    .wrapper {
+      padding: 2em 10em;
+    }
+  }
+  .sneakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    .title {
+      width: 100%;
+      max-width: 32em;
+    }
+
+    img {
+      width: 100%;
+      max-width: 32em;
+
+      object-fit: cover;
+      height: 25em;
+      margin-left: 10em;
+    }
+  }
+}

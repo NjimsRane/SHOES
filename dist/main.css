@@ -60,11 +60,11 @@ body .wrapperChange {
 .mainHeader {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  height: 6em;
 }
 .mainHeader #logo {
   font-family: var(--FONT-FAMILY);
-  font-size: x-large;
+  font-size: 3em;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 2px;
@@ -183,15 +183,103 @@ body .wrapperChange {
   text-align: right;
 }
 .mainSection p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin-block: 1em 2em;
   line-height: 1.5;
   text-align: justify;
 }
 .mainSection img {
   width: 100%;
-  height: 25em;
+  height: 40em;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 2px 2px 4px #444;
+}
+
+@media (min-width: 950px) {
+  body .container {
+    padding: 2em 8em;
+  }
+
+  .heroImage {
+    left: auto;
+    top: auto;
+    width: 50%;
+    left: 50%;
+    height: 40em;
+  }
+
+  .container .mainHeader {
+    height: 6em;
+  }
+  .container .mainHeader #logo span {
+    color: red;
+  }
+  .container .mainHeader .hamburgerMenu {
+    display: none;
+  }
+  .container .mainHeader .navMenu {
+    position: unset;
+    transform: translateX(0);
+    width: auto;
+    height: auto;
+    background: none;
+    left: 0;
+    top: 0;
+  }
+  .container .mainHeader .navMenu .menuList {
+    margin-top: 0em;
+    display: flex;
+  }
+  .container .mainHeader .navMenu .menuList li {
+    margin-left: 3em;
+    position: relative;
+  }
+  .container .mainHeader .navMenu .menuList li::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0.2em;
+    background-color: white;
+    left: 0;
+    top: 1.5em;
+    transition: 0.5s;
+  }
+  .container .mainHeader .navMenu .menuList li:hover::after {
+    width: 100%;
+  }
+  .container .mainHeader .navMenu .menuList li a {
+    padding: 0 0;
+    color: white;
+    display: auto;
+  }
+  .container .headingSection {
+    margin-bottom: 6em;
+    color: #282828;
+    width: 40%;
+  }
+  .container .headingSection .animatedBar {
+    background-color: #282828;
+  }
+
+  body .wrapper {
+    padding: 2em 10em;
+  }
+
+  .sneakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .sneakers .title {
+    width: 100%;
+    max-width: 32em;
+  }
+  .sneakers img {
+    width: 100%;
+    max-width: 32em;
+    object-fit: cover;
+    height: 25em;
+    margin-left: 10em;
+  }
 }/*# sourceMappingURL=main.css.map */

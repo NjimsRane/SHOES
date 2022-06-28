@@ -1,11 +1,12 @@
 .mainHeader {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
+  height: 6em;
 
   #logo {
     font-family: var(--FONT-FAMILY);
-    font-size: x-large;
+    font-size: 3em;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 2px;
